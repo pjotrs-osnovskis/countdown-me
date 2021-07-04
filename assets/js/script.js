@@ -4,11 +4,11 @@ const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
 
+const countdownEnd = document.getElementById("enter-date")
 
-const countdownEnd = "28 Feb 2022";
 
 function countdown() {
-  const endDate = new Date(countdownEnd);
+  const endDate = new Date(countdownEnd.value);
   const currentDate = new Date();
 
   const totalSeconds = (endDate - currentDate) / 1000
@@ -21,11 +21,13 @@ function countdown() {
   hoursEl.innerHTML = formatTime(hours);
   minutesEl.innerHTML = formatTime(minutes);
   secondsEl.innerHTML = formatTime(seconds);
+
 }
 
 function formatTime(time) {
   return time < 10 ? (`0${time}`) : time;
 }
+
 
 countdown();
 

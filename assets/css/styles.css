@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -41,3 +41,15 @@ h1 {
   font-size: 1.3rem;
 }
 
+/* enter date */
+
+.enter-date {
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-family: inherit;
+  font-size: 1.2rem;
+  text-align: center;
+}
